@@ -4,7 +4,7 @@ import time
 log = logging.getLogger(__name__)
 
 def run(context):
-
+    
 	context.perform_gesture('tap', 'btn_tap')
 	context.perform_gesture('double_tap', 'btn_double_tap')	
 
