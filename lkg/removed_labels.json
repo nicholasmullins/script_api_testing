@@ -7,6 +7,9 @@
         "MjJiZDdiNTAwMGVhNGJiMDk1NDMyZTI1ZDBmZTc1MmY=\n": [
             "inp_search_categories"
         ], 
+        "NDViZGY2NmIwMTcyYzAwM2ZmODVkNzNhMDMzNWU1MTQ=\n": [
+            "btn_home"
+        ], 
         "NDYyOTRiNmVmZTUzYjY4MzMwNDg2ZWZlMzFhOTU3NzU=\n": [
             "btn_save_changes"
         ], 
@@ -14,6 +17,9 @@
             "inp_address_one", 
             "inp_address_two", 
             "inp_email"
+        ], 
+        "NmUzMDEzNjk3MjgxMDVhNzBlYjRlMmEzZDQwZmViOTc=\n": [
+            "inp_zip"
         ], 
         "NzZlMTMyNWViNzNiN2UyMjg4ZDVmZmY2OWY0OTAxZDI=\n": [
             "btn_delete_post"

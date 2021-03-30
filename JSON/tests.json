@@ -588,6 +588,31 @@
                 "labels": [], 
                 "type": "action", 
                 "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "test test test", 
+                "grep_count": null, 
+                "input": "text_entry", 
+                "label_count": null, 
+                "labels": [
+                    "inp_ta_element_info"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "execute_script", 
+                "label_count": null, 
+                "labels": [], 
+                "script_name": "find_element.py", 
+                "type": "execute_script", 
+                "widget": "default"
             }
         ], 
         "tags": [], 
