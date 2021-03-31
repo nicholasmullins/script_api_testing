@@ -83,6 +83,15 @@
                 "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
             }
         }, 
+        "iter_00000_step_00011_20_a.png": {
+            "lnk_home": {
+                "all_scores": {
+                    "hash_based": 1.0
+                }, 
+                "score": 1.0, 
+                "source": "hash_based"
+            }
+        }, 
         "iter_00000_step_00011_24_a.png": {
             "lnk_find_element": {
                 "all_scores": {
