@@ -312,7 +312,7 @@
                 "input": "", 
                 "label_count": null, 
                 "labels": [], 
-                "paramerters": "input_param_sequence.csv", 
+                "parameters": "input_param_sequence.csv", 
                 "steps": [
                     {
                         "click_first": false, 
@@ -330,13 +330,15 @@
                     {
                         "click_first": false, 
                         "continue_on_failure": false, 
-                        "description": "Verify name shows {my_email_onscreen}", 
-                        "grep": "{my_email_onscreen}", 
+                        "description": "Type {my_password}", 
+                        "grep": "{my_password}", 
                         "grep_count": "", 
-                        "input": "", 
+                        "input": "text_entry_no_submit", 
                         "label_count": null, 
-                        "labels": [], 
-                        "type": "verification"
+                        "labels": [
+                            "inp_password"
+                        ], 
+                        "type": "action"
                     }, 
                     {
                         "continue_on_failure": false, 
@@ -355,7 +357,9 @@
                 "type": "sequence"
             }
         ], 
-        "tags": [], 
+        "tags": [
+            "seqtest"
+        ], 
         "temp_id": "79a6173a-90a5-11eb-9124-149d997fd38b", 
         "title": "Parameterization - Input - Sequence"
     }, 
@@ -431,7 +435,7 @@
         "temp_id": "9a3d19a3-9227-11eb-b421-149d997fd38b", 
         "title": "Parameterization - Tap - Step Param"
     }, 
-    "Parameterization Tap - Simple Tap test ": {
+    "Parameterization Tap - Simple Tap test {index}": {
         "description": "Simple Test Parameterizatin", 
         "is_deactivated": false, 
         "parameterized_id": "2ee0e316-6bd8-4793-8471-e332b770ba8e", 
@@ -439,7 +443,7 @@
         "steps": [
             {
                 "continue_on_failure": false, 
-                "description": "Tap links {my_label}", 
+                "description": "Tap links {index}", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "tap", 
@@ -452,10 +456,10 @@
             }
         ], 
         "tags": [
-            "{my_label}"
+            "paramtest"
         ], 
         "temp_id": "fc250291-9099-11eb-b38b-149d997fd38b", 
-        "title": "Parameterization Tap - Simple Tap test "
+        "title": "Parameterization Tap - Simple Tap test {index}"
     }, 
     "Verification - Individual Scripts": {
         "description": "", 
@@ -867,5 +871,39 @@
         "tags": [], 
         "temp_id": "8cc6e000-8e4b-11eb-ad44-149d997fd38b", 
         "title": "practice"
+    }, 
+    "template testing": {
+        "description": "", 
+        "is_deactivated": false, 
+        "steps": [
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "lnk_wait"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "", 
+                "label_count": null, 
+                "labels": [], 
+                "script_name": "wait_for_template_match.py", 
+                "type": "execute_script", 
+                "widget": "default"
+            }
+        ], 
+        "tags": [], 
+        "temp_id": "6bcd277a-9246-11eb-ace8-149d997fd38b", 
+        "title": "template testing"
     }
 }
