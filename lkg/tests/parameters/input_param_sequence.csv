@@ -1,4 +1,4 @@
-my_email, my_password
-john@email.com, 1234
-betty@gmail.com, 5678
-jane@yahoo.com, 78910
+my_email,my_password,verify_email,verify_password
+john@email.com,1234,john@email.com,1234
+betty@gmail.com,5678,betty@gmail.com,5678
+jane@yahoo.com,78910,jane@yahoo.com,78910
