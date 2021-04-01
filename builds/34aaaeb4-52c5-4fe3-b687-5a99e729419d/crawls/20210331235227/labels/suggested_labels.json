@@ -108,6 +108,13 @@
             }
         }, 
         "iter_00000_step_00045_18_a.png": {
+            "lnk_profile": {
+                "all_scores": {
+                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 1.0
+                }, 
+                "score": 1.0, 
+                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
+            }, 
             "mnu_profile": {
                 "all_scores": {
                     "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.91

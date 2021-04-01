@@ -6,5 +6,6 @@
     "input", 
     "label", 
     "li", 
-    "span"
+    "span", 
+    "TemplateMatchElement"
 ]

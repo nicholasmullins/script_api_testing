@@ -1,7 +1,7 @@
 {
     "Basic Gestures - Individual Scripts": {
         "description": "", 
-        "is_deactivated": false, 
+        "is_deactivated": true, 
         "steps": [
             {
                 "continue_on_failure": false, 
@@ -95,7 +95,7 @@
     }, 
     "Bot Basic Gestures All": {
         "description": "", 
-        "is_deactivated": false, 
+        "is_deactivated": true, 
         "steps": [
             {
                 "continue_on_failure": false, 
@@ -129,7 +129,7 @@
     }, 
     "Find Element": {
         "description": "", 
-        "is_deactivated": false, 
+        "is_deactivated": true, 
         "steps": [
             {
                 "continue_on_failure": false, 
@@ -485,7 +485,7 @@
                 "input": "", 
                 "label_count": null, 
                 "labels": [], 
-                "parameters": "tap_params_sequence.csv", 
+                "parameters": "tap_params_sequence_one.csv", 
                 "steps": [
                     {
                         "click_first": false, 
@@ -538,6 +538,58 @@
                 "label_count": null, 
                 "labels": [
                     "ddi_first_option"
+                ], 
+                "type": "verification", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "Tap Parameterization Sequence", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "", 
+                "label_count": null, 
+                "labels": [], 
+                "parameters": "tap_params_sequence_two.csv", 
+                "steps": [
+                    {
+                        "click_first": false, 
+                        "continue_on_failure": false, 
+                        "description": "Tap {my_label}", 
+                        "grep": "", 
+                        "grep_count": "", 
+                        "input": "tap", 
+                        "label_count": null, 
+                        "labels": [
+                            "{my_label}"
+                        ], 
+                        "type": "action"
+                    }
+                ], 
+                "type": "sequence"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "", 
+                "label_count": null, 
+                "labels": [
+                    "tgl_switch_on"
+                ], 
+                "type": "verification", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "", 
+                "label_count": null, 
+                "labels": [
+                    "div_cbx_active"
                 ], 
                 "type": "verification", 
                 "widget": "default"
@@ -616,6 +668,46 @@
                 ], 
                 "type": "verification", 
                 "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "Tap {index}", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "{my_label}"
+                ], 
+                "parameters": "tap_params_step_two.csv", 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "", 
+                "label_count": null, 
+                "labels": [
+                    "tgl_switch_on"
+                ], 
+                "type": "verification", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "", 
+                "label_count": null, 
+                "labels": [
+                    "div_cbx_active"
+                ], 
+                "type": "verification", 
+                "widget": "default"
             }
         ], 
         "tags": [
@@ -678,7 +770,7 @@
     }, 
     "Verification - Individual Scripts": {
         "description": "", 
-        "is_deactivated": false, 
+        "is_deactivated": true, 
         "steps": [
             {
                 "continue_on_failure": false, 
@@ -875,7 +967,7 @@
     }, 
     "Wait": {
         "description": "", 
-        "is_deactivated": false, 
+        "is_deactivated": true, 
         "steps": [
             {
                 "continue_on_failure": false, 
@@ -922,7 +1014,7 @@
     }, 
     "practice": {
         "description": "", 
-        "is_deactivated": false, 
+        "is_deactivated": true, 
         "steps": [
             {
                 "continue_on_failure": false, 
