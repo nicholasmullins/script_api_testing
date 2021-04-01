@@ -1,5 +1,3 @@
-my_test
-Param - Test One
-Param - Test Two
-Param - Test Three
-
+inp_email,inp_password
+john@email.com, 1234
+betty@email.com, 5678
