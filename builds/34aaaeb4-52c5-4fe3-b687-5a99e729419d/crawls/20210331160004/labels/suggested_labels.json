@@ -34,6 +34,15 @@
                 "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
             }
         }, 
+        "iter_00000_step_00004_53_div.png": {
+            "div_cbx_active": {
+                "all_scores": {
+                    "hash_based": 1.0
+                }, 
+                "score": 1.0, 
+                "source": "hash_based"
+            }
+        }, 
         "iter_00000_step_00005_35_a.png": {
             "ddi_second_option": {
                 "all_scores": {

@@ -4,5 +4,6 @@
     "div", 
     "i", 
     "li", 
-    "span"
+    "span", 
+    "TemplateMatchElement"
 ]

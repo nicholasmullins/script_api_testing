@@ -9,5 +9,6 @@
     "span", 
     "td", 
     "textarea", 
-    "tr"
+    "tr", 
+    "TemplateMatchElement"
 ]
