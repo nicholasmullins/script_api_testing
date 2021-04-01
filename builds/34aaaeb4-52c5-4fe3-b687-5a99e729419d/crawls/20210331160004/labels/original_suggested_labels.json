@@ -52,15 +52,6 @@
                 "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
             }
         }, 
-        "iter_00000_step_00006_11_button.png": {
-            "btn_tap_one": {
-                "all_scores": {
-                    "hash_based": 1.0
-                }, 
-                "score": 1.0, 
-                "source": "hash_based"
-            }
-        }, 
         "iter_00000_step_00006_13_button.png": {
             "ddl_option": {
                 "all_scores": {
@@ -116,6 +107,13 @@
                     "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 1.0
                 }, 
                 "score": 1.0, 
+                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
+            }, 
+            "mnu_profile": {
+                "all_scores": {
+                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.91
+                }, 
+                "score": 0.91, 
                 "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
             }
         }, 
