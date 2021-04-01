@@ -18,7 +18,7 @@
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "Tap - Tap", 
+                "description": "Tap and Verify", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "execute_script", 
@@ -30,7 +30,7 @@
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "Double Tap", 
+                "description": "Double Tap and Verify", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "execute_script", 
@@ -78,7 +78,7 @@
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "Text Entry ", 
+                "description": "Text Entry and Verify that \"Here is some text!\" Does Not Exist", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "execute_script", 
@@ -161,7 +161,179 @@
         "temp_id": "e9d137ee-91a4-11eb-8b5c-787b8ade0f4b", 
         "title": "Find Element"
     }, 
-    "Input - Simple Form": {
+    "Param - Test 1": {
+        "description": "", 
+        "is_deactivated": false, 
+        "steps": [
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "lnk_input_param"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "text_entry_no_submit", 
+                "label_count": null, 
+                "labels": [
+                    "inp_email"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }
+        ], 
+        "tags": [
+            "one"
+        ], 
+        "temp_id": "f8b5dd00-90b9-11eb-8943-149d997fd38b", 
+        "title": "Param - Test 1"
+    }, 
+    "Param - Test 2": {
+        "description": "", 
+        "is_deactivated": false, 
+        "steps": [
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "lnk_input_param"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "betty_email.com", 
+                "grep_count": null, 
+                "input": "text_entry_no_submit", 
+                "label_count": null, 
+                "labels": [
+                    "inp_email"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }
+        ], 
+        "tags": [
+            "two"
+        ], 
+        "temp_id": "1cd80dfd-90ba-11eb-9124-149d997fd38b", 
+        "title": "Param - Test 2"
+    }, 
+    "Param - Test 3": {
+        "description": "", 
+        "is_deactivated": false, 
+        "steps": [
+            {
+                "continue_on_failure": false, 
+                "description": "linda@email.com", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "lnk_input_param"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "john@email.com", 
+                "grep_count": null, 
+                "input": "text_entry_no_submit", 
+                "label_count": null, 
+                "labels": [
+                    "inp_email"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }
+        ], 
+        "tags": [
+            "three"
+        ], 
+        "temp_id": "22cdd0f0-90ba-11eb-94af-149d997fd38b", 
+        "title": "Param - Test 3"
+    }, 
+    "Parameterization - Input - Sequence": {
+        "description": "", 
+        "is_deactivated": false, 
+        "steps": [
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "lnk_input_param"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "Param Sequence for Input Form", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "", 
+                "label_count": null, 
+                "labels": [], 
+                "paramerters": "input_sequence_param.csv", 
+                "steps": [
+                    {
+                        "click_first": false, 
+                        "continue_on_failure": false, 
+                        "description": "Type {my_email}", 
+                        "grep": "{my_email}", 
+                        "grep_count": "", 
+                        "input": "text_entry", 
+                        "label_count": null, 
+                        "labels": [
+                            "inp_email"
+                        ], 
+                        "type": "action"
+                    }, 
+                    {
+                        "continue_on_failure": false, 
+                        "description": "", 
+                        "grep": "", 
+                        "grep_count": null, 
+                        "input": "", 
+                        "label_count": null, 
+                        "labels": [
+                            "btn_sign_in"
+                        ], 
+                        "type": "action", 
+                        "widget": "default"
+                    }
+                ], 
+                "type": "sequence"
+            }
+        ], 
+        "tags": [], 
+        "temp_id": "79a6173a-90a5-11eb-9124-149d997fd38b", 
+        "title": "Parameterization - Input - Sequence"
+    }, 
+    "Parameterization - Input - Simple Form": {
         "description": "Simple Test that fills out the form to use for Param Scripting ", 
         "is_deactivated": false, 
         "steps": [
@@ -285,86 +457,10 @@
         ], 
         "tags": [], 
         "temp_id": "7dc6e9cc-9094-11eb-8309-149d997fd38b", 
-        "title": "Input - Simple Form"
-    }, 
-    "Parameterization - Input - Sequence": {
-        "description": "", 
-        "is_deactivated": false, 
-        "steps": [
-            {
-                "continue_on_failure": false, 
-                "description": "", 
-                "grep": "", 
-                "grep_count": null, 
-                "input": "tap", 
-                "label_count": null, 
-                "labels": [
-                    "lnk_input_param"
-                ], 
-                "type": "action", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "Param Sequence for Input Form", 
-                "grep": "", 
-                "grep_count": null, 
-                "input": "", 
-                "label_count": null, 
-                "labels": [], 
-                "parameters": "input_param_sequence.csv", 
-                "steps": [
-                    {
-                        "click_first": false, 
-                        "continue_on_failure": false, 
-                        "description": "Type {my_email}", 
-                        "grep": "{my_email}", 
-                        "grep_count": "", 
-                        "input": "text_entry_no_submit", 
-                        "label_count": null, 
-                        "labels": [
-                            "inp_email"
-                        ], 
-                        "type": "action"
-                    }, 
-                    {
-                        "click_first": false, 
-                        "continue_on_failure": false, 
-                        "description": "Type {my_password}", 
-                        "grep": "{my_password}", 
-                        "grep_count": "", 
-                        "input": "text_entry_no_submit", 
-                        "label_count": null, 
-                        "labels": [
-                            "inp_password"
-                        ], 
-                        "type": "action"
-                    }, 
-                    {
-                        "continue_on_failure": false, 
-                        "description": "", 
-                        "grep": "", 
-                        "grep_count": null, 
-                        "input": "", 
-                        "label_count": null, 
-                        "labels": [
-                            "btn_sign_in"
-                        ], 
-                        "type": "action", 
-                        "widget": "default"
-                    }
-                ], 
-                "type": "sequence"
-            }
-        ], 
-        "tags": [
-            "seqtest"
-        ], 
-        "temp_id": "79a6173a-90a5-11eb-9124-149d997fd38b", 
-        "title": "Parameterization - Input - Sequence"
+        "title": "Parameterization - Input - Simple Form"
     }, 
     "Parameterization - Input - Step Parameterization": {
-        "description": "Uses parameters to fill out a form.", 
+        "description": "", 
         "is_deactivated": false, 
         "steps": [
             {
@@ -399,13 +495,13 @@
         "temp_id": "87352d21-909b-11eb-ab7a-149d997fd38b", 
         "title": "Parameterization - Input - Step Parameterization"
     }, 
-    "Parameterization - Tap - Step Param": {
+    "Parameterization Tap - Simple Tap test": {
         "description": "", 
         "is_deactivated": false, 
         "steps": [
             {
                 "continue_on_failure": false, 
-                "description": "", 
+                "description": "Tap on the Tap Paramaterization link.", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "tap", 
@@ -418,48 +514,34 @@
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "Tap {index}", 
+                "description": "", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "tap", 
                 "label_count": null, 
                 "labels": [
-                    "{my_label}"
+                    "inp_radio_maybe"
                 ], 
-                "parameters": "tap_params_step.csv", 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "ddl_option"
+                ], 
                 "type": "action", 
                 "widget": "default"
             }
         ], 
         "tags": [], 
-        "temp_id": "9a3d19a3-9227-11eb-b421-149d997fd38b", 
-        "title": "Parameterization - Tap - Step Param"
-    }, 
-    "Parameterization Tap - Simple Tap test {index}": {
-        "description": "Simple Test Parameterizatin", 
-        "is_deactivated": false, 
-        "parameterized_id": "2ee0e316-6bd8-4793-8471-e332b770ba8e", 
-        "parameters": "tap_params_simple.csv", 
-        "steps": [
-            {
-                "continue_on_failure": false, 
-                "description": "Tap links {index}", 
-                "grep": "", 
-                "grep_count": null, 
-                "input": "tap", 
-                "label_count": null, 
-                "labels": [
-                    "{my_label}"
-                ], 
-                "type": "action", 
-                "widget": "default"
-            }
-        ], 
-        "tags": [
-            "paramtest"
-        ], 
         "temp_id": "fc250291-9099-11eb-b38b-149d997fd38b", 
-        "title": "Parameterization Tap - Simple Tap test {index}"
+        "title": "Parameterization Tap - Simple Tap test"
     }, 
     "Verification - Individual Scripts": {
         "description": "", 
@@ -586,44 +668,23 @@
                 "input": "tap", 
                 "label_count": null, 
                 "labels": [
-                    "btn_verify_string_not_present"
+                    "btn_verify_two_labeled_elements"
                 ], 
                 "type": "action", 
                 "widget": "default"
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "", 
+                "description": "Verify Two Labeled Elements", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "execute_script", 
                 "label_count": null, 
                 "labels": [], 
-                "script_name": "verify_string_not_present.py", 
+                "script_name": "verify_two_labeled_elements.py", 
                 "type": "execute_script", 
                 "widget": "default"
             }, 
-            {
-                "continue_on_failure": false, 
-                "description": "Verifies \"btn_accept \"is not present on screen.", 
-                "grep": "", 
-                "grep_count": null, 
-                "input": "", 
-                "label_count": null, 
-                "labels": [], 
-                "script_name": "verify_label_not_present.py", 
-                "type": "execute_script", 
-                "widget": "default"
-            }
-        ], 
-        "tags": [], 
-        "temp_id": "a4ce655c-91b3-11eb-81f5-787b8ade0f4b", 
-        "title": "Verification - Individual Scripts"
-    }, 
-    "Verification label practice": {
-        "description": "", 
-        "is_deactivated": false, 
-        "steps": [
             {
                 "continue_on_failure": false, 
                 "description": "", 
@@ -632,9 +693,21 @@
                 "input": "tap", 
                 "label_count": null, 
                 "labels": [
-                    "lnk_verify"
+                    "btn_verify_string_not_present"
                 ], 
                 "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "Verify that gmail.com is not present", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "execute_script", 
+                "label_count": null, 
+                "labels": [], 
+                "script_name": "verify_string_not_present.py", 
+                "type": "execute_script", 
                 "widget": "default"
             }, 
             {
@@ -655,7 +728,7 @@
                 "description": "", 
                 "grep": "", 
                 "grep_count": null, 
-                "input": "", 
+                "input": "execute_script", 
                 "label_count": null, 
                 "labels": [], 
                 "script_name": "verify_label_not_present.py", 
@@ -664,8 +737,8 @@
             }
         ], 
         "tags": [], 
-        "temp_id": "08aecb9c-922f-11eb-b421-149d997fd38b", 
-        "title": "Verification label practice"
+        "temp_id": "a4ce655c-91b3-11eb-81f5-787b8ade0f4b", 
+        "title": "Verification - Individual Scripts"
     }, 
     "Wait": {
         "description": "", 
@@ -714,54 +787,6 @@
         "temp_id": "1cb719dc-91a6-11eb-8e01-787b8ade0f4b", 
         "title": "Wait"
     }, 
-    "param tap practice": {
-        "description": "", 
-        "is_deactivated": false, 
-        "steps": [
-            {
-                "continue_on_failure": false, 
-                "description": "", 
-                "grep": "", 
-                "grep_count": null, 
-                "input": "tap", 
-                "label_count": null, 
-                "labels": [
-                    "inp_radio_no"
-                ], 
-                "type": "action", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "", 
-                "grep": "", 
-                "grep_count": null, 
-                "input": "tap", 
-                "label_count": null, 
-                "labels": [
-                    "inp_radio_fair_amount"
-                ], 
-                "type": "action", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "", 
-                "grep": "", 
-                "grep_count": null, 
-                "input": "tap", 
-                "label_count": null, 
-                "labels": [
-                    "cbx_accept_terms"
-                ], 
-                "type": "action", 
-                "widget": "default"
-            }
-        ], 
-        "tags": [], 
-        "temp_id": "000596d1-921e-11eb-8aed-149d997fd38b", 
-        "title": "param tap practice"
-    }, 
     "practice": {
         "description": "", 
         "is_deactivated": false, 
@@ -774,7 +799,8 @@
                 "input": "tap", 
                 "label_count": null, 
                 "labels": [
-                    "btn_details_one"
+                    "btn_modal_button", 
+                    "btn_accept"
                 ], 
                 "type": "action", 
                 "widget": "default"
@@ -871,39 +897,5 @@
         "tags": [], 
         "temp_id": "8cc6e000-8e4b-11eb-ad44-149d997fd38b", 
         "title": "practice"
-    }, 
-    "template testing": {
-        "description": "", 
-        "is_deactivated": false, 
-        "steps": [
-            {
-                "continue_on_failure": false, 
-                "description": "", 
-                "grep": "", 
-                "grep_count": null, 
-                "input": "tap", 
-                "label_count": null, 
-                "labels": [
-                    "lnk_wait"
-                ], 
-                "type": "action", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "", 
-                "grep": "", 
-                "grep_count": null, 
-                "input": "", 
-                "label_count": null, 
-                "labels": [], 
-                "script_name": "wait_for_template_match.py", 
-                "type": "execute_script", 
-                "widget": "default"
-            }
-        ], 
-        "tags": [], 
-        "temp_id": "6bcd277a-9246-11eb-ace8-149d997fd38b", 
-        "title": "template testing"
     }
 }
