@@ -10,5 +10,6 @@
     "select", 
     "span", 
     "td", 
-    "tr"
+    "tr", 
+    "TemplateMatchElement"
 ]
