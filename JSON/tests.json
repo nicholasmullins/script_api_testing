@@ -202,37 +202,15 @@
                         "type": "action"
                     }, 
                     {
-                        "click_first": false, 
                         "continue_on_failure": false, 
-                        "description": "Type {my_password}", 
-                        "grep": "{my_password}", 
-                        "grep_count": "", 
-                        "input": "text_entry_no_submit", 
+                        "description": "", 
+                        "grep": "", 
+                        "grep_count": null, 
+                        "input": "", 
                         "label_count": null, 
                         "labels": [
-                            "inp_password"
+                            "{verify_email}"
                         ], 
-                        "type": "action"
-                    }, 
-                    {
-                        "continue_on_failure": false, 
-                        "description": "", 
-                        "grep": "{verify_email}", 
-                        "grep_count": null, 
-                        "input": "", 
-                        "label_count": null, 
-                        "labels": [], 
-                        "type": "verification", 
-                        "widget": "default"
-                    }, 
-                    {
-                        "continue_on_failure": false, 
-                        "description": "", 
-                        "grep": "{verify_password}", 
-                        "grep_count": null, 
-                        "input": "", 
-                        "label_count": null, 
-                        "labels": [], 
                         "type": "verification", 
                         "widget": "default"
                     }, 
@@ -286,7 +264,7 @@
                 "labels": [
                     "{my_label}"
                 ], 
-                "parameters": "input_params_step.csv", 
+                "parameters": "input_params_step_short.csv", 
                 "type": "action", 
                 "widget": "default"
             }, 
@@ -304,67 +282,27 @@
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "Verify email was written", 
-                "grep": "john@email.com", 
+                "description": "", 
+                "grep": "", 
                 "grep_count": null, 
                 "input": "", 
                 "label_count": null, 
-                "labels": [], 
+                "labels": [
+                    "div_verify_john_email"
+                ], 
                 "type": "verification", 
                 "widget": "default"
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "Verify password was typed", 
-                "grep": "1234", 
+                "description": "", 
+                "grep": "", 
                 "grep_count": null, 
                 "input": "", 
                 "label_count": null, 
-                "labels": [], 
-                "type": "verification", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "Verify address was typed", 
-                "grep": "15 W 25th", 
-                "grep_count": null, 
-                "input": "", 
-                "label_count": null, 
-                "labels": [], 
-                "type": "verification", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "Verify address two was typed", 
-                "grep": "Apt. 1", 
-                "grep_count": null, 
-                "input": "", 
-                "label_count": null, 
-                "labels": [], 
-                "type": "verification", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "Verify city was typed", 
-                "grep": "NYC", 
-                "grep_count": null, 
-                "input": "", 
-                "label_count": null, 
-                "labels": [], 
-                "type": "verification", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "Verify zip was typed", 
-                "grep": "10014", 
-                "grep_count": null, 
-                "input": "", 
-                "label_count": null, 
-                "labels": [], 
+                "labels": [
+                    "div_verify_twenty_five"
+                ], 
                 "type": "verification", 
                 "widget": "default"
             }
@@ -407,49 +345,24 @@
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "Enter Password {index}", 
-                "grep": "{inp_password}", 
+                "description": "", 
+                "grep": "", 
                 "grep_count": null, 
-                "input": "text_entry_no_submit", 
+                "input": "", 
                 "label_count": null, 
-                "labels": [
-                    "inp_password"
-                ], 
-                "type": "action", 
+                "labels": [], 
+                "script_name": "get_all_elements.py", 
+                "type": "execute_script", 
                 "widget": "default"
             }, 
             {
                 "continue_on_failure": false, 
                 "description": "Verify bot typed email {index}", 
-                "grep": "{verify_email}", 
-                "grep_count": null, 
-                "input": "", 
-                "label_count": null, 
-                "labels": [], 
-                "type": "verification", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "", 
                 "grep": "", 
                 "grep_count": null, 
-                "input": "text_entry_no_submit", 
-                "label_count": null, 
-                "labels": [
-                    "inp_address_one"
-                ], 
-                "type": "action", 
-                "widget": "default"
-            }, 
-            {
-                "continue_on_failure": false, 
-                "description": "Verify bot typed password {index}", 
-                "grep": "{verify_password}", 
-                "grep_count": null, 
                 "input": "", 
                 "label_count": null, 
-                "labels": [], 
+                "labels": ["{verify_email}"], 
                 "type": "verification", 
                 "widget": "default"
             }
@@ -1014,7 +927,7 @@
     }, 
     "practice": {
         "description": "", 
-        "is_deactivated": true, 
+        "is_deactivated": false, 
         "steps": [
             {
                 "continue_on_failure": false, 
