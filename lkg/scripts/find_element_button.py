@@ -7,7 +7,7 @@ def run(context):
     element_info = context.find_element('btn_button')
     json_string = json.dumps(element_info)
     parseable_unicode = json.loads(json_string)
-    string_and_variable = 'THE BUTTON INFO:\n\n' + ' ' + json_string
+    string_and_variable = 'BUTTON INFO:\n\n' + ' ' + json_string
 
     print(parseable_unicode['flags']['scrollable'])
     
