@@ -8,5 +8,6 @@
     "label", 
     "li", 
     "span", 
-    "textarea"
+    "textarea", 
+    "TemplateMatchElement"
 ]

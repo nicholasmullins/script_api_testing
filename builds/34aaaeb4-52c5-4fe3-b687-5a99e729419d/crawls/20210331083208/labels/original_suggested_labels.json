@@ -112,6 +112,15 @@
                 "score": 0.97, 
                 "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
             }
+        }, 
+        "iter_00000_step_00016_56_input.png": {
+            "inp_betty_email": {
+                "all_scores": {
+                    "hash_based": 1.0
+                }, 
+                "score": 1.0, 
+                "source": "hash_based"
+            }
         }
     }, 
     "screens": {}

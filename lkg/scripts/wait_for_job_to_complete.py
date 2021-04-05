@@ -7,5 +7,5 @@ def run(context):
         context.perform_gesture('tap', 'btn_complete_job')
 
 
-    context.wait(wait_for_job_to_complete, 40, sleep_in_between=5)    
+    context.wait(wait_for_job_to_complete, 40, sleep_in_between=15)    
 

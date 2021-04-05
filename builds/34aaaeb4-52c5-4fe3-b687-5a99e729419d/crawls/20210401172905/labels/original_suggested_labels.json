@@ -115,6 +115,13 @@
             }
         }, 
         "iter_00000_step_00003_54_input.png": {
+            "inp_betty_email": {
+                "all_scores": {
+                    "hash_based": 1.0
+                }, 
+                "score": 1.0, 
+                "source": "hash_based"
+            }, 
             "inp_email": {
                 "all_scores": {
                     "hash_based": 1.0, 
@@ -432,6 +439,7 @@
             }, 
             "inp_password": {
                 "all_scores": {
+                    "hash_based": 1.0, 
                     "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 1.0
                 }, 
                 "score": 1.0, 

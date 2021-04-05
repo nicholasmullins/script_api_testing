@@ -105,6 +105,13 @@
                 }, 
                 "score": 1.0, 
                 "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
+            }, 
+            "inp_textarea": {
+                "all_scores": {
+                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.86
+                }, 
+                "score": 0.86, 
+                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
             }
         }, 
         "iter_00000_step_00003_27_a.png": {
@@ -196,13 +203,6 @@
             }
         }, 
         "iter_00000_step_00003_54_input.png": {
-            "inp_betty_email": {
-                "all_scores": {
-                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.91
-                }, 
-                "score": 0.91, 
-                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
-            }, 
             "inp_email": {
                 "all_scores": {
                     "hash_based": 1.0, 
@@ -229,15 +229,6 @@
                     "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 1.0
                 }, 
                 "score": 1.0, 
-                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
-            }
-        }, 
-        "iter_00000_step_00003_6_input.png": {
-            "inp_password": {
-                "all_scores": {
-                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.97
-                }, 
-                "score": 0.97, 
                 "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
             }
         }, 
