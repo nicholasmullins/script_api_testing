@@ -129,7 +129,7 @@
     }, 
     "Find Element": {
         "description": "", 
-        "is_deactivated": true, 
+        "is_deactivated": false, 
         "steps": [
             {
                 "continue_on_failure": false, 
@@ -146,7 +146,33 @@
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "Find Element and Type out JSON String in Input Element", 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "inp_ta_element_info"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "btn_button"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "Find Element (Button) and Verify \"Button Info\"", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "execute_script", 
@@ -161,6 +187,19 @@
                 "description": "", 
                 "grep": "", 
                 "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "inp_checkbox"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "Find Element (Checkbox) and Verify \"Checkbox Info\"", 
+                "grep": "", 
+                "grep_count": null, 
                 "input": "execute_script", 
                 "label_count": null, 
                 "labels": [], 
@@ -173,16 +212,17 @@
                 "description": "", 
                 "grep": "", 
                 "grep_count": null, 
-                "input": "execute_script", 
+                "input": "tap", 
                 "label_count": null, 
-                "labels": [], 
-                "script_name": "find_element_link.py", 
-                "type": "execute_script", 
+                "labels": [
+                    "inp_radio"
+                ], 
+                "type": "action", 
                 "widget": "default"
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "", 
+                "description": "Find Element (Radio) and Verify \"Radio Info\"", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "execute_script", 
@@ -197,6 +237,44 @@
                 "description": "", 
                 "grep": "", 
                 "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "lnk_link"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "Find Element (Link) and Verify \"Link Info\"", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "execute_script", 
+                "label_count": null, 
+                "labels": [], 
+                "script_name": "find_element_link.py", 
+                "type": "execute_script", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "", 
+                "grep": "", 
+                "grep_count": null, 
+                "input": "tap", 
+                "label_count": null, 
+                "labels": [
+                    "inp_slider"
+                ], 
+                "type": "action", 
+                "widget": "default"
+            }, 
+            {
+                "continue_on_failure": false, 
+                "description": "Find Element (Slider) and Verify \"Slider Info\"", 
+                "grep": "", 
+                "grep_count": null, 
                 "input": "execute_script", 
                 "label_count": null, 
                 "labels": [], 
@@ -209,16 +287,17 @@
                 "description": "", 
                 "grep": "", 
                 "grep_count": null, 
-                "input": "", 
+                "input": "tap", 
                 "label_count": null, 
-                "labels": [], 
-                "script_name": "find_element_textarea.py", 
-                "type": "execute_script", 
+                "labels": [
+                    "inp_text_input"
+                ], 
+                "type": "action", 
                 "widget": "default"
             }, 
             {
                 "continue_on_failure": false, 
-                "description": "", 
+                "description": "Find Element (Text Input Field) and Verify \"Text Input Field Info\"", 
                 "grep": "", 
                 "grep_count": null, 
                 "input": "", 

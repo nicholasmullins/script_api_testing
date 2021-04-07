@@ -104,12 +104,20 @@
             }
         }, 
         "iter_00000_step_00033_18_a.png": {
+            "lnk_profile": {
+                "all_scores": {
+                    "hash_based": 1.0
+                }, 
+                "score": 1.0, 
+                "source": "hash_based"
+            }, 
             "mnu_profile": {
                 "all_scores": {
+                    "hash_based": 1.0, 
                     "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.91
                 }, 
-                "score": 0.91, 
-                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
+                "score": 1.0, 
+                "source": "hash_based"
             }
         }, 
         "iter_00000_step_00033_19_a.png": {

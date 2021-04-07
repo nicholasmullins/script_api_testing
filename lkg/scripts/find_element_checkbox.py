@@ -12,4 +12,4 @@ def run(context):
 
 
     context.perform_gesture('text_entry_no_submit', 'inp_ta_element_info', string_and_variable)
-    # context.verify(grep="CHECKBOX INFO")
+    context.verify(grep="CHECKBOX INFO")

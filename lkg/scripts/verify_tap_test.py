@@ -6,7 +6,7 @@ def run(context):
         context.verify(labels=[inp_radio_no_active])
     elif:
         element_exists(context, 'div_btn_clicked'):
-            context.verify(labels=[div_btn_clicked])
-elif:
+        context.verify(labels=[div_btn_clicked])
+    elif:
         element_exists(context, 'ddi_first_option'):
         context.verify(labels=[div_btn_clicked])
