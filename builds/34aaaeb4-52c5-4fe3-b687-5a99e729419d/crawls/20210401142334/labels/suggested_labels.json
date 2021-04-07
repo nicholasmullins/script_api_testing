@@ -9,45 +9,16 @@
                 "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
             }
         }, 
-        "iter_00000_step_00004_12_textarea.png": {
-            "inp_zip": {
+        "iter_00000_step_00004_12_textarea.png": {}, 
+        "iter_00000_step_00007_16_textarea.png": {}, 
+        "iter_00000_step_00014_16_textarea.png": {}, 
+        "iter_00000_step_00015_16_textarea.png": {
+            "inp_ta_element_info": {
                 "all_scores": {
-                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.94
+                    "hash_based": 1.0
                 }, 
-                "score": 0.94, 
-                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
-            }
-        }, 
-        "iter_00000_step_00007_16_textarea.png": {
-            "inp_city": {
-                "all_scores": {
-                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.91
-                }, 
-                "score": 0.91, 
-                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
-            }, 
-            "inp_password": {
-                "all_scores": {
-                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.89
-                }, 
-                "score": 0.89, 
-                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
-            }
-        }, 
-        "iter_00000_step_00014_16_textarea.png": {
-            "inp_city": {
-                "all_scores": {
-                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.91
-                }, 
-                "score": 0.91, 
-                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
-            }, 
-            "inp_password": {
-                "all_scores": {
-                    "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.89
-                }, 
-                "score": 0.89, 
-                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
+                "score": 1.0, 
+                "source": "hash_based"
             }
         }, 
         "iter_00000_step_00016_10_a.png": {
@@ -63,6 +34,7 @@
         "iter_00000_step_00016_12_a.png": {
             "lnk_profile": {
                 "all_scores": {
+                    "hash_based": 1.0, 
                     "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 1.0
                 }, 
                 "score": 1.0, 
@@ -70,10 +42,11 @@
             }, 
             "mnu_profile": {
                 "all_scores": {
+                    "hash_based": 1.0, 
                     "test_ai_mod.carbon_classifiers.perceptual.nn_classifier": 0.91
                 }, 
-                "score": 0.91, 
-                "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
+                "score": 1.0, 
+                "source": "hash_based"
             }
         }, 
         "iter_00000_step_00016_13_a.png": {

@@ -8,7 +8,8 @@ def run(context):
     json_string = json.dumps(element_info)
     parseable_unicode = json.loads(json_string)
     
-    string_and_variable = 'RADIO (SELECTED):\n\n' + ' ' + json_string
+    string_and_variable = 'RADIO INFO (SELECTED):\n\n' + ' ' + json_string
 
 
     context.perform_gesture('text_entry_no_submit', 'inp_ta_element_info', string_and_variable)
+    context.verify(grep="RADIO INFO")

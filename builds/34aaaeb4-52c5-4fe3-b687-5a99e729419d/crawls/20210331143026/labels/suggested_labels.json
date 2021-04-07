@@ -276,6 +276,22 @@
                 "source": "test_ai_mod.carbon_classifiers.perceptual.nn_classifier"
             }
         }, 
+        "iter_00000_step_00015_14_a.png": {
+            "lnk_profile": {
+                "all_scores": {
+                    "hash_based": 1.0
+                }, 
+                "score": 1.0, 
+                "source": "hash_based"
+            }, 
+            "mnu_profile": {
+                "all_scores": {
+                    "hash_based": 1.0
+                }, 
+                "score": 1.0, 
+                "source": "hash_based"
+            }
+        }, 
         "iter_00000_step_00015_15_a.png": {
             "lnk_find_element": {
                 "all_scores": {
